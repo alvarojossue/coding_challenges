@@ -20,3 +20,27 @@ permutations?("presentable", "taco")         #=> false
 permutations?("taco", "cato")                #=> true
 permutations?("taco", "cat")                 #=> false
 ```
+
+Coding Challenge: Palindromes
+=============================
+
+A **palindrome** is a word or phrase
+that reads the same forwards and backwards.
+For example, if you invert the phrase _a car, a man, a maraca_,
+you get _acaram a, nam a, rac a_.
+After playing around with the commas and the spaces you get the original again:
+_a car, a man, a maraca_.
+
+Write a function in Ruby or JavaScript that receives a string as argument.
+The function should figure out whether or not that string is a palindrome.
+It should **return `true`** if the string is a palindrome
+and **return `false`** if the string is _not_ a palindrome.
+
+```ruby
+palindrome?("a car, a man, a maraca")  #=> true
+palindrome?("campus motto: bottoms up mac")  #=> true
+palindrome?("maps, dna, and spam")  #=> true
+palindrome?("racecar")  #=> true
+palindrome?("there's no place like home") #=> false
+palindrome?("i like pizza")  #=> false
+```
